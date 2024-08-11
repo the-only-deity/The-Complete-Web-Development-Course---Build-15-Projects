@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Example</title>
+	</head>
+	<body>
+		<form action="" method="get">
+			<label for="address">Address:</label>
+			<input
+				type="text"
+				id="address"
+				name="address"
+				placeholder="Address"
+				size="30px"
+				maxlength="100"
+			/>
+			<br />
+			<br />
+			<label for="postcode">Postcode:</label>
+			<input
+				type="text"
+				id="postcode"
+				name="postcode"
+				placeholder="Postcode"
+				size="30px"
+				maxlength="100"
+			/>
+			<br />
+			<br />
+			<label for="city">City:</label>
+			<input
+				type="text"
+				id="city"
+				name="city"
+				placeholder="City"
+				size="30px"
+				maxlength="100"
+			/>
+			<p>Choose your shipping method</p>
+			<select name="shipping" id="shipping">
+				<!-- <option value="">Select shipping method</option> -->
+				<option value="Free super saver shipping">
+					Free super saver shipping
+				</option>
+				<option value="Two-Day shipping">Two-Day shipping</option>
+				<option value="One-Day shipping">One-Day shipping</option>
+			</select>
+			<p>Choose your payment method</p>
+			<label
+				><input
+					type="radio"
+					name="payment"
+					id="paypal"
+					value="paypal"
+				/>Paypal</label
+			>
+			<br />
+			<label
+				><input
+					type="radio"
+					name="payment"
+					id="debit-card"
+					value="debit card"
+				/>Debit Card</label
+			>
+			<br />
+			<label
+				><input
+					type="radio"
+					name="payment"
+					id="credit-card"
+					value="credit card"
+				/>Credit Card</label
+			>
+			<br />
+			<br />
+			<label for="comments">Comments:</label>
+			<br />
+			<textarea name="comments" id="comments" cols="40" rows="4"></textarea>
+			<br />
+			<br />
+			<label
+				><input type="checkbox" name="email updates" checked="checked" />Sign me
+				up for email updates!</label
+			>
+			<br />
+			<label
+				><input
+					type="checkbox"
+					name="save payments securely"
+					checked="checked"
+				/>Securely save my payment details</label
+			>
+			<br />
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>

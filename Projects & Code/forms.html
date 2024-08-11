@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout Form</title>
+	</head>
+	<body>
+		<h1>Checkout Form</h1>
+
+		<form action="get">
+			<p>Your Name (for shipping)</p>
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="fname" required />
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lname" required />
+			<p>Who is your Hostess?</p>
+			<label for="hostess"
+				>Name of the person who invited you to the party!</label
+			>
+			<input type="text" id="hostess" name="hostess" required />
+			<p>Billing Address</p>
+			<label for="main-street-address">Street Address</label>
+			<input
+				type="text"
+				id="main-street-address"
+				name="main-street-address"
+				required
+			/>
+			<br />
+			<label for="alt-street-address">Street Address Line 2</label>
+			<input type="text" id="alt-street-address" name="alt-street-address" />
+		</form>
+	</body>
+</html>
