@@ -1,0 +1,14 @@
+{
+	"name": "sass",
+	"version": "1.0.0",
+	"description": "sass",
+	"main": "index.js",
+	"scripts": {
+		"compile-sass": "sass --watch sass/styles.scss css/styles.css"
+	},
+	"author": "Mukundi",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.79.1"
+	}
+}
