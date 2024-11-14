@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Tooltip plugin
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div>
+        <p>
+          Paragraph.
+        </p>
+        <p>
+          This is a 
+          <a href="http://www.google.com" title="Google" data-toggle="tooltip" data-placement="right">
+            link
+          </a>
+          .
+        </p>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" title="button tooltip" data-placement="bottom">
+          Button
+        </button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="tooltip"]').tooltip('show');
+      $('[data-toggle="tooltip"]').on('hidden.bs.tooltip',function(){
+        window.alert("tooltip hidden!");
+      }
+                                     )
+        
+    </script>
+  </body>
+</html>

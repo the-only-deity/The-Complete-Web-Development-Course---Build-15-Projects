@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Modal plugin
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <button type="button" class="btn btn-primary" data-target="#myInquiry" data-toggle="modal" data-ordernumber="1122">
+        Order Number: 1122 - Contact us
+      </button>
+      <div class="modal" id="myInquiry" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 id="myModalLabel">
+                Thank you for contacting us: 
+              </h4>
+          </div>
+          <div class="modal-body">
+            <label for="inquiry">
+              Your inquiry:
+            </label>
+            <textarea class="form-control" rows="5" id="inquiry">
+            </textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Send
+            </button>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script>
+    $('#myInquiry').on('hide.bs.modal',function(){
+      //window.alert('Hi!');
+    }
+                      );
+    $('#myInquiry').on('show.bs.modal',function(event){
+      var button = $(event.relatedTarget);
+      var orderNumber = button.data('ordernumber');
+      $(this).find('#myModalLabel').text('Order number: ' + orderNumber);
+    }
+                      )
+  </script>
+  </body>
+</html>

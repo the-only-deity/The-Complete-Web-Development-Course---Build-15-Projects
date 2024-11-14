@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Button plugin
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <button type="button" class="btn btn-primary" id="button1" data-loading-text="Loading...">
+        Button1
+      </button>
+      
+      
+      <button type="button" class="btn btn-primary" id="button2" data-loading-text="Loading..." data-complete-text="Download complete!">
+        Button2
+      </button>
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+      $(function(){
+        $('#button1').click(function(){
+          $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('reset');
+              $(this).dequeue();
+        }
+                                                   );
+    }
+                       );
+  
+  $('#button2').click(function(){
+    $(this).button('loading').delay(1000).queue(function(){
+      $(this).button('complete');
+    }
+                                               );
+  }
+                     );
+}
+ );
+  </script>
+  </body>
+</html>

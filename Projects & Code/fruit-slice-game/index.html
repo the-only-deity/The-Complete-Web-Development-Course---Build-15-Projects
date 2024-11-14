@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=yes"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Fruit Slice Game</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="score">Score: <span id="score-value">0</span></div>
+			<div id="trials-left"></div>
+			<div id="fruit-container">
+				<img id="fruit" class="fruits" src="assets/images/banana.png" />
+			</div>
+			<div id="instructions">Catch Fruits</div>
+			<div id="start-reset">Start Game</div>
+			<div id="game-over"></div>
+		</div>
+		<audio id="slice-sound">
+			<source src="assets/audio/knife slice sound.mp3" type="audio/mpeg" />
+			<source src="assets/audio/knife slice sound.ogg" type="audio/ogg" />
+		</audio>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"
+			integrity="sha256-u0L8aA6Ev3bY2HI4y0CAyr9H8FRWgX4hZ9+K7C2nzdc="
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>

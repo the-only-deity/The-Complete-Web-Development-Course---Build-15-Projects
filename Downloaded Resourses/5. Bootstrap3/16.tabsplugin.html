@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Tabs plugin
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <ul class="nav nav-tabs nav-justified" id="myTabs">
+        <li role="presentation" class="active">
+          <a href="#home" data-toggle="tab">
+            <span class="glyphicon glyphicon-home">
+            </span>
+            Home
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a href="#messages" data-toggle="tab">
+            <span class="glyphicon glyphicon-envelope">
+            </span>
+            Messages 
+            <span class="badge">
+              3
+            </span>
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a href="#notifications" data-toggle="tab">
+            Notifications 
+            <span class="badge">
+              3
+            </span>
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a href="#contactUs" data-toggle="tab">
+            Contact us
+          </a>
+        </li>
+        
+      </ul>
+      
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane active fade in" id="home">
+          <p>
+            Home Content.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="messages">
+          <p>
+            Messages Content.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="notifications">
+          <p>
+            Notifications Content.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="contactUs">
+          <p>
+            Contact us.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+          <p>
+            Some text.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script>
+      $('#myTabs a:last').tab('show');
+      $('a[data-toggle="tab"]').on('shown.bs.tab',function(event){
+        window.alert('The active tab is: ' + $(event.target).text() + '. The previous tab is: ' + $(event.relatedTarget).text());
+      }
+                                  );
+    </script>
+  </body>
+</html>
