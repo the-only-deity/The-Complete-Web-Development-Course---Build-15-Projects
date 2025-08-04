@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Painting Software</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap-3/css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="content-container">
+			<!-- title -->
+			<div id="header">Paint</div>
+
+			<!-- colour palette -->
+			<div class="inputContainer">
+				<div class="input" id="colourInput">
+					<input type="color" list id="paintColour" />
+				</div>
+
+				<div class="input" id="thicknessInput"><div id="circle"></div></div>
+				<div class="input"><div id="slider"></div></div>
+			</div>
+
+			<!-- canvas -->
+			<div id="canvasContainer">
+				<canvas id="paintCanvas" width="500px" height="400px"></canvas>
+			</div>
+
+			<!-- buttons -->
+			<div class="buttonSet">
+				<div class="buttons"><span id="erase" class="button">Erase</span></div>
+				<div class="buttons"><span id="save" class="button">Save</span></div>
+				<div class="buttons"><span id="reset" class="button">Reset</span></div>
+			</div>
+
+			<!-- footer -->
+			<!-- <div class="footer">
+				<div class="container-fluid">
+					<p>&copy; Mukundi Softwares</p>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap-3/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

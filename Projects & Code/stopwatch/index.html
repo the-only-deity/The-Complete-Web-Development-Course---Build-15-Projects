@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Stopwatch</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap-3/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body data-spy="scroll" data-target="#myNavbar">
+		<div id="body-container" class="container-fluid">
+			<!-- application title -->
+			<div id="header">Stopwatch</div>
+
+			<!-- total timer -->
+			<div id="totalTime">
+				<span id="hours">00</span>:<span id="minutes">00</span>:<span
+					id="seconds"
+					>00</span
+				>:<span id="centiseconds">00</span>
+			</div>
+
+			<!-- lap timer -->
+			<div id="lap">
+				<span id="lapHours">00</span>:<span id="lapMinutes">00</span>:<span
+					id="lapSeconds"
+					>00</span
+				>:<span id="lapCentiseconds">00</span>
+			</div>
+
+			<!-- controls -->
+			<div id="controls" class="row">
+				<div class="col-xs-2 col-xs-offset-4">
+					<div id="startButton" class="buttons">Start</div>
+					<div id="stopButton" class="buttons">Stop</div>
+					<div id="resumeButton" class="buttons">Resume</div>
+				</div>
+				<div class="col-xs-2">
+					<div id="lapButton" class="buttons">Lap</div>
+					<div id="resetButton" class="buttons">Reset</div>
+				</div>
+			</div>
+
+			<!-- laps -->
+			<div id="laps"></div>
+
+			<!-- footer -->
+			<div class="footer">
+				<div class="container-fluid">
+					<p>&copy; Red Skull Softwares</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap-3/js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
