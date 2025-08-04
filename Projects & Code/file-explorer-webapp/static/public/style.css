@@ -37,7 +37,7 @@ ion-icon {
 
 tbody {
 	display: block;
-	height: 300px;
+	/* height: 300px; */
 	overflow-y: scroll;
 }
 
